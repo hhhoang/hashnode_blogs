@@ -32,8 +32,7 @@ for s in strategies:
     dummy_regr = DummyRegressor(strategy = s).fit(X_train, y_train)
     score = dummy_regr.score(X_test, y_test)
     print(f'For strategy {s}, score is: {score}')
-
-    
+   
 
 # compare with a simple linear regression
 linear_regr = LinearRegression().fit(X_train, y_train)
@@ -41,7 +40,7 @@ lin_reg_score = linear_regr.score(X_test, y_test)
 print(f'For simple linear regression, score is: {lin_reg_score}')
 
 
-##### Dummy Classifier ######
+################## DUMMY CLASSIFIER ##################################
 breast_cancer = load_breast_cancer()
 
 breast_cancer_X = breast_cancer['data']
@@ -63,7 +62,6 @@ for s in strategies:
 
 
 #compare with a simple KNearestNeighbor with k=2
-
 KNN_clf = KNeighborsClassifier(n_neighbors=2).fit(X_test, y_test)
 KNN_clf_score = KNN_clf.score(X_test, y_test)
 print(f'For a simple KNN classfier, score is: {KNN_clf_score}')
