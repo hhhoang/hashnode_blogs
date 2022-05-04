@@ -2,7 +2,7 @@
 
 Encoding categorical variables is an important step in preprocessing for buillding a statistical model in data science. Because most of the machine learning algoriths donot work (well) with categorical data directly but rather in numeric form. The categorical data could be feedback type (very poor, poor, satisfactory, good, very good) or  regions (Europe, Asia, Americas, Oceania, Africa). The process to convert a categorical variable into numeric variable is called encoding.
 
-There are many ways of categorical encoding, but the most popular ways are label encoding and one-hot encoding, which I will focus on this article. First, let's generate some data to use on both approaches. 
+There are many ways of categorical encoding, but the most popular ways are label encoding and one-hot encoding, which I will focus on this article. First, let's generate some data to use on both ways. 
 
 
 ```
@@ -33,7 +33,7 @@ Education    object
 
 ``` 
 
-1. Label Encoding
+# 1. Label Encoding
 Label encoding simply converts each unique wording label into numerical number based on alphabetical order. There are two ways you can achieve this by:
 - approach 1: using category codes in pandas 
 - approach 2: using class LabelEncoder from scikit-learn library
@@ -74,7 +74,7 @@ print(df.head())
 ``` 
 We see for both approaches, we have the same conversion of label to numerical form. However, there is no relationship between categories themselves, but label encoding introduces an order relationship. Will the model associate the higher value of label as better and so on? 
 
-2. One-Hot Encoding
+# 2. One-Hot Encoding
 
 With one hot encoding we introduce a number of new dummy variables with binary encoding (0 and 1) to address if any label appears in which row (1) or not (0). After encoding, we will see each unique category of the feature 'Education' represented as a separate feature. The same as label encoding, we can generate one hot encoding by two methods:
 
