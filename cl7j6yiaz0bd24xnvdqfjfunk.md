@@ -1,14 +1,17 @@
 ## APIs are everywhere
 
 1. What is API?
+
 API is the acronym for **Application Programming Interface**, which is a mechanism that enables two softwares/applications to communicate with each other based on a set of standards and protocols. 
 
 Mostly known und mostly used APIs are web APIs. A lot of companies have accumulated or generated a lot of data and produce APIs to either share these data to their partner or to sell these data per API call. For example, the weather bureau’s system contains daily weather data and we want to develop an app to display this weather information daily on the phone, our app needs to connect to bureau's system via APIs to retrieve the data. In this context, our app acts as a client application, which sends a request to the web server of the bureau and receives a response with the requested information, typically in JSON format. API calls usually requires authentification and authorisation to prevent the risk of attack on the server.
 
 2. Why are APIs becoming more popular?
+
 APIs are increasingly important and popular over the past decade. It is not overreacting at all to say that many web applications would not be made possible without APIs. How so? Firstly, APIs improve collaboration between companies, business partners and even amongst developers, by making data exchange so much easier. Without APIs, software developers would have a much harder time writing code to get information from platforms or apps they want to access. Secondly, because of monetisation many companies who own a good database are selling "data as a service" and APIs just make it easier to implement. 
 
 3. How to use APIs
+
 Typically nowadays when you want to use APIs from a provider, you need to obtain an API Key, which is easily done by going to their website and register an account. After that you can use multiple programming languages (Java, Javascript, Python, Perl and Ruby) to retrieve the data with the API key you received. Usually the provider will provide a defined syntax on their API documentation, so that you can easily apply them on your application. API requests have several methods, such as POST (send data/input), GET (retrieve data), PUT (update data) and DELETE (delete data). 
 
 As a practical example I will demonstrate how I use API to retrieve and weather information and display it on my small website I built as part of my learning process. The demo link can be found [here](https://musing-darwin-6b02d3.netlify.app/). If you are interested in how to publish an app with Netlify, kindly let me know in the comment.
